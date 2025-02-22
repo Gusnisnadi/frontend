@@ -19,72 +19,157 @@
         <div class="logo">
           <p>Logo</p>
         </div>
+
+        <!--bar kiri-->
+
         <div class="sidebar-button">
-          <div class="device active">
-            <a href="#"><img src="assets/devices.png" alt=""></a>
+          <div class="sidebar-device active">
+            <img src="assets/devices.png" alt="">
           </div>
-          <div class="member">
-            <a href="main_page_member.html"><img src="assets/members.png" alt=""></a>
+          <div class="sidebar-member">
+            <img src="assets/members.png" alt="">
           </div>
-          <div class="security">
-            <a href="main_page_security.html"><img src="assets/security.png" alt=""></a>
+          <div class="sidebar-security">
+            <img src="assets/security.png" alt="">
           </div>
         </div>
       </div>
+      <!---bar kanan atas-->
       <div class="mainbar">
         <div class="top-right-bar">
-          <div class="usericon">
-            <img src="assets/Male User.png" alt="">
-          </div>
-          <div class="settings">
-            <img src="assets/Settings.png" alt="">
-          </div>
-          <div class="notification">
-            <img src="assets/Alarm.png" alt="">
-          </div>
+            <a href="#" data-top-right-bar="Profile"><img src="assets/Male User.png" alt=""></a>
+            <a href="#" data-top-right-bar="Settings" class="rotate"><img src="assets/Settings.png" alt=""></a>
+            <a href="#" data-top-right-bar="Notification"><img src="assets/Alarm.png" alt=""></a>
         </div>
-        <div class="device-title">
-          <div class="container">
-            <p>Devices</p>
-            <div class="add-device">
-              Add Devices <img src="assets/Plus Math.png" alt="">
+
+        <!---Halaman devices-->
+
+        <section class="devices">
+          <div class="device-title">
+            <div class="container">
+              <p>Devices</p>
             </div>
           </div>
-        </div>
-        <div class="main-content-devices">
-          <div class="container">
-            <section class="no-devices hidden">
-              <p>All of your devices will be here</p>
-              <div class="add-device">
-                Add Devices <img src="assets/Plus Math.png" alt="">
+          <div class="main-content-devices">
+            <div class="container">
+              <div class="no-devices hidden">
+                <p>All of your devices will be here</p>
+                <div class="add-device">
+                  <a href="#">Add Devices <img src="assets/Plus Math.png" alt=""></a>
+                </div>
               </div>
-            </section>
-            <section class="have-devices">
-              <div class="search-bar">
-                <form action="" method="">
-                  <input type="text" placeholder="Search..">
-                </form>
-              </div>
-              <div class="device-list">
-                <div class="device-list-container">
-                  <div class="device-list-name">
-                    <img src="assets/Rectangle 12.png" alt="">
-                    <a href="#" >Monitoring Kualitas Udara </a>
-                    <i class="fa-solid fa-circle"></i>
+              <div class="have-devices">
+                <div class="search-bar">
+                  <form action="" method="">
+                    <input type="text" placeholder="Search..">
+                  </form>
+                  <div class="add-device">
+                    <a href="#">Add Devices <img src="assets/Plus Math.png" alt=""></a>
                   </div>
-                  <div class="device-list-name">
-                    <img src="assets/Rectangle 12.png" alt="">
-                    <a href="#" >Monitoring Kualitas Air </a>
-                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <div class="device-list">
+                  <div class="device-list-container">
+                    <div class="device-list-name">
+                      <img src="assets/Rectangle 12.png" alt="">
+                      <a href="#" >Monitoring Kualitas Udara </a>
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="device-list-name">
+                      <img src="assets/Rectangle 12.png" alt="">
+                      <a href="#" >Monitoring Kualitas Air </a>
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <!---halaman member-->
+
+        <section class="members hidden">
+          <div class="device-title">
+            <div class="container">
+              <p>Members</p>
+            </div>
+          </div>
+          <div class="main-content-members">
+            <div class="container">
+              <div class="no-members hidden">
+                <p>All of your devices will be here</p>
+                <div class="add-device">
+                  <a href="#">Add Members <img src="assets/Plus Math.png" alt=""></a>
+                </div>
+              </div>
+              <div class="have-members">
+                <div class="search-bar">
+                  <form action="" method="">
+                    <input type="text" placeholder="Search..">
+                  </form>
+                  <div class="add-device">
+                    <a href="#">Add Members <img src="assets/Plus Math.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="device-list">
+                  <div class="device-list-container">
+                    <div class="device-list-name">
+                      <img src="assets/Rectangle 12.png" alt="">
+                      <a href="#" >John</a>
+                    </div>
+                    <div class="device-list-name">
+                      <img src="assets/Rectangle 12.png" alt="">
+                      <a href="#" >Batak</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!---halaman security-->
+        <section class="security hidden">
+          <div class="device-title">
+            <div class="container">
+              <p>Security</p>
+            </div>
+          </div>
+          <div class="main-content-security">
+            <div class="container">
+              <div class="no-devices hidden">
+                <p>All of your devices will be here</p>
+                <div class="add-device">
+                  Add Devices <img src="assets/Plus Math.png" alt="">
+                </div>
+              </div>
+              <div class="have-devices">
+                <div class="search-bar">
+                  <form action="" method="">
+                    <input type="text" placeholder="Search..">
+                  </form>
+                </div>
+                <div class="device-list">
+                  <div class="device-list-container">
+                    <div class="device-list-name">
+                      <img src="assets/Rectangle 12.png" alt="">
+                      <a href="#" >Monitoring Kualitas Udara </a>
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="device-list-name">
+                      <img src="assets/Rectangle 12.png" alt="">
+                      <a href="#" >Monitoring Kualitas Air </a>
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </section>
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>
