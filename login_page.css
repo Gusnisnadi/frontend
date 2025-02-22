@@ -1,0 +1,87 @@
+body{
+    background-color: whitesmoke;
+}
+.login{
+    max-height: 100dvh;
+    display: flex;
+    padding-top: 10dvh;
+    justify-content: center;
+}
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+}
+.login-container img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.login-container .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.login-container .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.login-container .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.login-container .input-group i {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 12px;
+    color: #888;
+}
+.login-container .input-group input[type="email"],
+.login-container .input-group input[type="password"] {
+    padding-left: 35px;
+}
+.login-container .input-group input[type="email"]:hover,
+.login-container .input-group input[type="password"]:hover {
+    border-color: #048dff;
+}
+.login-container .forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+.login-container .login-btn {
+    background: linear-gradient(45deg,#048dff, #88c9ff);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+.login-container .create-account {
+    display: block;
+    margin-top: 20px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+.privacy-policy {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #6c63ff;
+    text-decoration: none;
+}
